@@ -29,6 +29,7 @@ export function modals() {
 
 				// отображаем переданный селектор
 				modal.style.display = 'block'
+				modal.classList.add('animated', 'fadeIn')
 				document.body.style.overflow = 'hidden'
 			})
 		})
