@@ -1,4 +1,4 @@
-function showMoreCards(btnS, cardsS) {
+export function showMoreCards(btnS, cardsS) {
 
 	let btn = document.querySelector(btnS)
 	let cards = document.querySelectorAll(cardsS)
@@ -12,5 +12,3 @@ function showMoreCards(btnS, cardsS) {
 		btn.remove()
 	})
 }
-
-export default showMoreCards

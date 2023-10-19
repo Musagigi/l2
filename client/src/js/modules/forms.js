@@ -1,5 +1,5 @@
 // import checkNumInputs from "./checkNumInputs";
-function forms() {
+export function forms() {
 
 	const forms = document.querySelectorAll('form')
 	const inputs = document.querySelectorAll('input')
@@ -104,5 +104,3 @@ function forms() {
 		})
 	}
 }
-
-export default forms

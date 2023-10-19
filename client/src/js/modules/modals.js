@@ -1,4 +1,4 @@
-function modals() {
+export function modals() {
 
 	// если хоть одна кнопка будет нажата
 	// модлка в конце сайта не сработает
@@ -98,5 +98,3 @@ function modals() {
 	showModalByTime('.popup-consultation', 60000)
 	scrollBottom('.fixed-gift')
 }
-
-export default modals;
