@@ -1,5 +1,5 @@
 // import checkNumInputs from "./checkNumInputs";
-export function forms() {
+export function forms(resultCalc) {
 
 	const forms = document.querySelectorAll('form')
 	const inputs = document.querySelectorAll('input')
@@ -34,6 +34,11 @@ export function forms() {
 		statusMessage.append(textMessage)
 
 		const formData = new FormData(this)
+
+		// console.log(resultCalc);
+		// if (!isNaN(parseInt(resultCalc))) {
+		// 	formData.append('сумма заказа', resultCalc)
+		// }
 
 		sendData('http://127.0.0.1:3000', formData)
 			.then(response => {
